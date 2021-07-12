@@ -6,6 +6,7 @@ class TelephoneFinder {
     // TODO: Complete the following function
     fun findAllNumbersFromGivenNumber(number: String): Array<String>? {
       //  throw NotImplementedError("Not implemented")
+        if(Integer.parseInt(number)<0) return null
         val listOfNumbers = mutableListOf<String>()
 number.forEachIndexed { index, c ->
     val response:Set<Char> = findNeighbours(c)
